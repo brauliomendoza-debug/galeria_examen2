@@ -82,11 +82,11 @@ import pymysql
 pymysql.install_as_MySQLdb()
 
 import dj_database_url
-import os
 
 DATABASES = {
     "default": dj_database_url.config(
-        env="DATABASE_URL"
+        env="DATABASE_URL",
+        conn_max_age=600
     )
 }
 

@@ -77,9 +77,6 @@ WSGI_APPLICATION = 'galeria.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-import pymysql
-
-pymysql.install_as_MySQLdb()
 
 import dj_database_url
 
